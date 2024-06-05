@@ -22,8 +22,11 @@ The store is closed and the next open period begins greater than 24 hours in the
 
 ## Pointers on the algorithm
 In my algorithm, there are carryoverPrevious time block and carryoverNext time block. These are used to handle business hours that corssover day boundary. For example: 
+
 if we have
+
 Tuesday 3pm - 12am
+
 Wednesday 12am - 2am
 
 Tuesday has a carryoverNext time block of (Wednesday 12am - 2am). This block will be used to calculate correct business hours for Tuesday.
